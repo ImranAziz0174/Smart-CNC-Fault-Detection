@@ -9,14 +9,14 @@
 
 ---
 
-## 🔍 Overview
+## Overview
 This project implements a predictive maintenance framework for CNC (Computer Numerical Control) machines, with an emphasis on early detection of **tool wear** and **clamping inadequacies**. Using high-frequency, multi-axis sensor data collected from 18 controlled milling experiments at the **System-level Manufacturing and Automation Research Testbed (SMART Lab)** at the University of Michigan, the project explores machine learning approaches for classifying fault conditions based on temporal patterns in motor current, velocity, and power signals.
 
 A comprehensive pipeline was developed in Python, involving exploratory data analysis, multivariate signal visualization, feature extraction, and supervised classification. Both linear (Logistic Regression) and ensemble-based (XGBoost) models were benchmarked to assess their effectiveness in real-time fault prediction tasks critical to smart manufacturing.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── EDA.ipynb                        # Data distribution, correlation heatmaps, and class imbalance analysis
@@ -31,7 +31,7 @@ A comprehensive pipeline was developed in Python, involving exploratory data ana
 
 ---
 
-## 📊 Dataset Description
+## Dataset Description
 
 ### Source  
 Data was acquired from 18 wax-block CNC machining experiments conducted at the **SMART Lab, University of Michigan**. Each experiment involved a complete machining cycle using varying parameters and captured both **metadata** and **high-frequency time-series signals**.
@@ -51,7 +51,7 @@ Each experiment includes over 40 columns sampled at 100ms intervals, capturing:
 
 ---
 
-## 🧠 Modeling Approach
+## Modeling Approach
 
 ### 1. **Exploratory Data Analysis**
 - Distribution analysis of class labels and input features  
@@ -74,7 +74,7 @@ Each experiment includes over 40 columns sampled at 100ms intervals, capturing:
 
 ---
 
-## 📌 Key Findings
+## Key Findings
 
 - **Tool Wear Prediction**:  
   - Logistic Regression: 33% Accuracy, poor recall for worn tools  
